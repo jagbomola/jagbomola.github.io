@@ -80,12 +80,25 @@
             margin-top: 20px;
         }
 
+        .gallery-item {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+        }
+
         .image-gallery img {
-            width: 250px;
+            width: 100%;
             height: auto;
             border-radius: 10px;
             border: 1px solid #ccc;
             box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .caption {
+            font-size: 14px;
+            color: #555;
+            margin-top: 8px;
+            line-height: 1.4;
         }
     </style>
 </head>
@@ -119,25 +132,34 @@ I am a PhD student in Applied Mathematics at Tulane University working on immune
 
 <div class="role">Graduate Teaching Assistant, Tulane University</div>
 <ul>
-    <li><strong>Stats for Scientists</strong> — Summer 2023, Fall 2023, Spring 2024, Summer 2025, Fall 2025, Spring 2026</li>
+    <li><strong>Stats for Scientists</strong> — Spring 2024, Summer 2023, Spring 2026, Summer 2025, Fall 2023, Fall 2025</li>
     <li><strong>Probability and Statistics</strong> — Fall 2024</li>
     <li><strong>Calculus I</strong> — Fall 2022, Spring 2025</li>
     <li><strong>Calculus III</strong> — Spring 2023</li>
-    <li><strong>Introduction to Discrete Mathematics</strong> — Spring 2025, Fall 2025</li>
+    <li><strong>Introduction to Discrete Mathematics</strong> — Fall 2025, Spring 2025</li>
 </ul>
 
 <div class="role">Instructor, Tulane University</div>
 <ul>
-    <li><strong>College Mathematics Prep</strong> — Summer 2023, Summer 2024</li>
+    <li><strong>MATH 1001: College Mathematics Prep</strong> — Summer 2023, Summer 2024</li>
     <li><strong>Sport Analytics</strong> — Summer 2024</li>
     <li><strong>Long Calculus II</strong> — Fall 2026</li>
 </ul>
 
 <h2>Gallery</h2>
 <div class="image-gallery">
-    <img src="IMG_4504.JPG" alt="Joshua Agbomola - Photo 1">
-    <img src="IMG_5681.JPG" alt="Joshua Agbomola - Photo 2">
-    <img src="IMG_4505.JPG" alt="Joshua Agbomola - Photo 3">
+    <div class="gallery-item">
+        <img src="IMG_4504.jpg" alt="IPC and IMSI 2025 conference">
+        <div class="caption">IPC And IMSI 2025 conference @ University of Chicago</div>
+    </div>
+    <div class="gallery-item">
+        <img src="IMG_5681.jpg" alt="IPC 2025 conference">
+        <div class="caption">IPC 2025 conference @ University of Chicago</div>
+    </div>
+    <div class="gallery-item">
+        <img src="IMG_4505.jpg" alt="Quantitative Phage-Bacteria summer school">
+        <div class="caption">Quantitative Phage-Bacteria summer school @ University of Maryland, College Park</div>
+    </div>
 </div>
 
 </body>
