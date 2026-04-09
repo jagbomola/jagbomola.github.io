@@ -14,6 +14,26 @@
 
         h1 {
             color: #003366;
+            margin-top: 0;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #003366;
+        }
+
+        .header-text {
+            flex: 1;
         }
 
         .links {
@@ -29,11 +49,6 @@
 
         .links a:hover {
             text-decoration: underline;
-        }
-
-        .email {
-            color: #555;
-            margin-top: 5px;
         }
 
         h2 {
@@ -56,18 +71,36 @@
         li {
             margin-bottom: 5px;
         }
+
+        .image-gallery {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .image-gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
     </style>
 </head>
 
 <body>
 
-<h1>Joshua Agbomola</h1>
-
-<p>
-PhD Student in Applied Mathematics<br>
-Tulane University<br>
-<span class="email">jagbomola(at)tulane(dot)edu</span>
-</p>
+<div class="header">
+    <img src="my_picture.jpg" alt="Joshua Agbomola" class="profile-img">
+    <div class="header-text">
+        <h1>Joshua Agbomola</h1>
+        <p>
+        PhD Student in Applied Mathematics<br>
+        Tulane University<br>
+        jagbomola(at)tulane(dot)edu
+        </p>
+    </div>
+</div>
 
 <div class="links">
     <a href="Joshua_Agbomola_CV.pdf" target="_blank">CV</a>
